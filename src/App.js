@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import V1 from './components/V1';
+import V4 from './components/V4';
+import V2 from './components/V2';
+import Loader from './components/Loader';
 function App() {
+//   chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+//     let url = tabs[0].url;
+//     // use url here inside the callback because it's asynchronous!
+// });
+
+
+console.log(window.location.toString())
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-[400px] px-3  mb-[100px] overflow-y-auto">
+      <V1/>
+      
+      
     </div>
   );
 }
